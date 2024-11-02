@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+/* /Users/jorgehernandez/Projects/creature-comforts/src/App.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  color: #3f3f3f;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+/*  Home page styles */
+.home-container .continue-button {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  bottom: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+/*  Cost Breakdown page styles */
+.cost-breakdown-container {
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cost-breakdown-container .header {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
