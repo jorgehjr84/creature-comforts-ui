@@ -92,6 +92,11 @@ export const CostBreakdown = () => {
             </div>
           </>
         )}
+        <div className="continue-button">
+          <Link to={"/location"} type="primary">
+            <Button type="primary">Continue</Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
