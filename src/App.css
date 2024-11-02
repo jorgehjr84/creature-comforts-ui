@@ -44,6 +44,12 @@ header {
   display: flex;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 /*  Home page styles */
 .home-container .continue-button {
   display: flex;
@@ -55,8 +61,30 @@ header {
 
 /*  Cost Breakdown page styles */
 .cost-breakdown-container {
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cost-breakdown-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+}
+
+.cost-breakdown-container .content .housing-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.cost-breakdown-container .content .housing-info-container .housing-image img {
+  height: 200px;
 }
 
 .cost-breakdown-container .header {
