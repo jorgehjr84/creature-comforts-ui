@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeftOutlined } from "@ant-design/icons";
+import { ArrowLeftOutlined, ExportOutlined } from "@ant-design/icons";
 import { Button, Dropdown } from "antd";
 import boxabl from "../images/boxabl.png";
 import yurt from "../images/yurt.png";
@@ -53,16 +53,41 @@ export const CostBreakdown = () => {
       </div>
       <div className="content">
         <Dropdown menu={{ items }} placement="bottomLeft">
-          <Button>Select your housing type</Button>
+          <Button style={{ width: "200px" }}>
+            {housingType ? housingType.label : "Select your housing type"}
+          </Button>
         </Dropdown>
 
         {housingType && (
           <>
             <div className="housing-info-container">
-              <h2>{housingType.label}</h2>
+              <h2>
+                {housingType.label}
+                <a href={housingType.link} target="_blank" rel="noreferrer">
+                  <ExportOutlined
+                    className="housing-vendor-link"
+                    style={{
+                      width: "0.75rem",
+                      marginLeft: "0.75rem",
+                    }}
+                  />
+                </a>
+              </h2>
               <p>Average cost: {formatCurrency(housingType.averageCost)}</p>
               <div className="housing-image">
                 <img src={selectedImage} alt={housingType} />
+              </div>
+              <div className="totals-container">
+                <span>Land Cost: {formatCurrency(400000)}</span>
+                <span>
+                  Average Housing Cost:{" "}
+                  {formatCurrency(housingType.averageCost)}
+                </span>
+                <span>Foundation Costs: {formatCurrency(10000)}</span>
+                <span>
+                  Total:{" "}
+                  {formatCurrency(400000 + housingType.averageCost + 10000)}
+                </span>
               </div>
             </div>
           </>
