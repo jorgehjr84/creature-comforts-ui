@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+Presentation guide:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Intro: Who likes fantasy or science fiction? Let's pretend we all agree what we're really targetting here is happiness _through_ housing.
+2. Here's the idea, a site that helps you find where you'd like to live based on some questions.
+3. What do we need to add here to try to make sure we're accounting for happiness? Let's ask AI for data which would be harder to find.
+	3.a. Demonstrate ChatGPT giving some answers to some more unusual questions.
+	3.b. How many flower boxes are in Orlando?
+4. What are we adding to the conversation? What _could_ we add to the conversation with an application like this? What if we start asking stranger questions.
+	4.a. What neighborhood street lights have a temperature of 3000K or less?
+	4.b. Which neighborhoods decorate for Halloween?
+	4.c. The value of answering questions like this has already been demonstrated by OkCupid where users have voluntarily answered 18 million questions about what they're seeking in a relationship with another person. The value could be equally valuable for answers about the relationship people would like with where they live.
+5. Building social networks is difficult and expensive. What are some financially constrained ways to attempt this?
+	5.a. Encouraging existing social networks to begin capturing this information. Low chance of success but very little time or financial investment.
+	5.b. Utilizing the group functionalities of existing social networks as a springboard for this kind of information. E.g. Create a group -> link to give access to app. Moderate financial investment.
+6. Okay what's a more ambitious approach?
+	6.a. This data doesn't need to be nationwide to reach that critical mass of delivering value. Critical mass within a certain radius will work. Focus on an area with flyers.
+	6.b. Targeting
+		6.b.i Average move length is 12 miles. This means if you send flyers to addresses with homes for sale those people will likely remain local.
+		6.b.ii Apartment complexes with young people are likely to be interested in this information. Distribute flyers.
+7. Reminder, this hackathon isn't about creating a profit generating idea. It's about creating an idea that makes the situation _better_. Meaning if any of these attempts demonstrates a success and triggers more we've succeeded.		
